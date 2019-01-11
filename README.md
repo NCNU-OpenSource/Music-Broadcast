@@ -15,4 +15,5 @@ bluetooth and discord Music bot
 
 ## 有趣影片
 [測試影片](https://www.youtube.com/watch?v=HARYLiyPiIk)
+[Discord Music Bot](https://youtu.be/Ewlr_iKJ3Eo)
 
