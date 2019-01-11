@@ -36,6 +36,8 @@ bluetooth and discord Music bot
 ### 程式設定 & 執行
 - 進入 configure.txt 設定 Bot's token and prefix command
 - 執行 <code>python3.5 music_bot.py</code>
+- 進入 discord, 執行 prefix command + "join", 將 bot 加入語音頻道
+- prefix command + "play" + url, 播放音樂
 
 ## 參考
 - [Making a python Bot with discord.py](https://www.youtube.com/playlist?list=PLW3GfRiBCHOiEkjvQj0uaUB1Q-RckYnj9)
