@@ -14,7 +14,20 @@ bluetooth and discord Music bot
 - 創造 discord music robot，專門播放音樂 
 
 ## Discord Music Bot
-# 安裝環境
+### 安裝環境
+'''
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install git libopus-dev libffi-dev libsodium-dev ffmpeg -y
+sudo apt-get install build-essential libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl -y
+pip install aiohttp
+install python3.5+
+python3 -m pip install -U youtube_dl
+視需求安裝不同 discord.py 版本
+'0.16.2' : sudo python3.5 -m pip install -U discord.py[voice]
+‘1.0.0a’ : sudo python3.6 -m pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]
+可透過 discord.__version__ 查看
+'''
 
 ## 影片
 - [測試影片](https://www.youtube.com/watch?v=HARYLiyPiIk)
