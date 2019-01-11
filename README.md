@@ -15,7 +15,8 @@ bluetooth and discord Music bot
 
 ## Discord Music Bot
 ### 事前準備
-[建立 Bot 帳號](https://discordapp.com/developers/applications/) 
+- [建立 Bot 帳號](https://discordapp.com/developers/applications/)
+- 教學 : 參照上方 ppt
 ### 安裝環境
 <pre><code>sudo apt-get update -y</code></pre>
 <pre><code>sudo apt-get upgrade -y</code></pre>
@@ -31,8 +32,18 @@ bluetooth and discord Music bot
 > sudo python3.6 -m pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]
 - 可透過 discord.__version__ 查看
 ### 程式設定 & 執行
-- 進入 configure.txt 輸入 Bot's token and 想要的 prefix command
-- 執行 python3.5 music_bot.py
+- 進入 configure.txt 設定 Bot's token and prefix command
+- 執行 <code>python3.5 music_bot.py</code>
+
+## 參考
+- [Making a python Bot with discord.py](https://www.youtube.com/playlist?list=PLW3GfRiBCHOiEkjvQj0uaUB1Q-RckYnj9)
+- [disocrd.py](https://github.com/Rapptz/discord.py)
+- [discord.py’s documentation](https://discordpy.readthedocs.io/en/latest/)
+
+## 分工
+- 藍芽 : 何建宏
+- discord music bot : 蔡旻勳
+- 所有網路相關設定 (包含 raspberry pi 本體設定) 與 youtube 抓取音樂 : 謝萬霖
 
 ## 影片
 - [測試影片](https://www.youtube.com/watch?v=HARYLiyPiIk)
