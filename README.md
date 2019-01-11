@@ -15,7 +15,7 @@ bluetooth and discord Music bot
 
 ## Discord Music Bot
 ### 安裝環境
-‵‵‵
+"""
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install git libopus-dev libffi-dev libsodium-dev ffmpeg -y
@@ -27,7 +27,7 @@ python3 -m pip install -U youtube_dl
 '0.16.2' : sudo python3.5 -m pip install -U discord.py[voice]
 ‘1.0.0a’ : sudo python3.6 -m pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]
 可透過 discord.__version__ 查看
-‵‵‵
+"""
 ## 影片
 - [測試影片](https://www.youtube.com/watch?v=HARYLiyPiIk)
 - [Discord Music Bot](https://youtu.be/Ewlr_iKJ3Eo)
