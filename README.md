@@ -27,10 +27,10 @@ bluetooth and discord Music bot
 <pre><code>python3 -m pip install -U youtube_dl</code></pre>
 - 視需求安裝不同 discord.py 版本
 - '0.16.2'
-> sudo python3.5 -m pip install -U discord.py[voice]
+<code>sudo python3.5 -m pip install -U discord.py[voice]</code>
 - ‘1.0.0a’
-> sudo python3.6 -m pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]
-- 可透過 discord.__version__ 查看
+> <code>sudo python3.6 -m pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]</code>
+- 可透過 <code>discord.__version__</code> 查看
 ### 程式設定 & 執行
 - 進入 configure.txt 設定 Bot's token and prefix command
 - 執行 <code>python3.5 music_bot.py</code>
