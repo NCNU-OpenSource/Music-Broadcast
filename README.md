@@ -14,6 +14,6 @@ bluetooth and discord Music bot
 - 創造 discord music robot，專門播放音樂 
 
 ## 有趣影片
-[測試影片](https://www.youtube.com/watch?v=HARYLiyPiIk)
-[Discord Music Bot](https://youtu.be/Ewlr_iKJ3Eo)
+- [測試影片](https://www.youtube.com/watch?v=HARYLiyPiIk)
+- [Discord Music Bot](https://youtu.be/Ewlr_iKJ3Eo)
 
