@@ -13,6 +13,8 @@ bluetooth and discord Music bot
 - 使用 raspberry pi 連接藍芽播放音樂
 - 創造 discord music robot，專門播放音樂 
 
+## 播放藍芽音樂
+
 ## Discord Music Bot
 ### 事前準備
 - [建立 Bot 帳號](https://discordapp.com/developers/applications/)
@@ -41,7 +43,7 @@ bluetooth and discord Music bot
 - [discord.py’s documentation](https://discordpy.readthedocs.io/en/latest/)
 
 ## 分工
-- 藍芽 : 何建宏
+- 播放藍芽音樂 : 何建宏
 - discord music bot : 蔡旻勳
 - 所有網路相關設定 (包含 raspberry pi 本體設定) 與 youtube 抓取音樂 : 謝萬霖
 
