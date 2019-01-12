@@ -72,7 +72,7 @@ connect 00:00:00:00:00:00
  usermod -aG pulse-access,audio pi
  pactl set-card-profile 1 a2dp
  </code></pre>
- - 撥放
+ - 播放
  <pre><code>aplay 檔案名稱.WAV</code></pre>
 ## Discord Music Bot
 ### 事前準備
