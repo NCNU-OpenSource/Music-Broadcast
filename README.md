@@ -14,6 +14,22 @@ bluetooth and discord Music bot
 - 創造 discord music robot，專門播放音樂 
 
 ## 播放藍芽音樂
+###套件下載
+<pre><code>sudo apt-get update -y</code></pre>
+<pre><code>sudo apt-get upgrade -y</code></pre>
+<pre><code>sudo apt-get install bluetooth</code></pre>
+<pre><code>sudo apt-get install --no-install-recommends pulseaudio pulseaudio-module-bluetooth</code></pre>
+###環境設定
+create /etc/systemd/system/pulseaudio.service
+<pre><code>
+[Unit]  
+Description=Pulse Audio  
+  
+[Service]  
+Type=simple  
+ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disable-shm
+</code></pre>
+
 
 ## Discord Music Bot
 ### 事前準備
