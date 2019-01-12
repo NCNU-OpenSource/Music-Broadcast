@@ -36,7 +36,6 @@ ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disable-shm
 <pre><code>
 內容:
 <busconfig>
-  
  <policy user="pulse">  
   <allow send_destination="org.bluez"/>  
  </policy>  
