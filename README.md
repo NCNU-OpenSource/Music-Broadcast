@@ -20,7 +20,7 @@ bluetooth and discord Music bot
 <pre><code>sudo apt-get install bluetooth</code></pre>
 <pre><code>sudo apt-get install --no-install-recommends pulseaudio pulseaudio-module-bluetooth</code></pre>
 ###環境設定
-create /etc/systemd/system/pulseaudio.service
+ - create /etc/systemd/system/pulseaudio.service
 <pre><code>
 [Unit]  
 Description=Pulse Audio  
