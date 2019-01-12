@@ -35,13 +35,11 @@ ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disable-shm
  - /etc/dbus-1/system.d/pulseaudio-bluetooth.conf
 <pre><code>
 內容:
-<busconfig>
-  
- <policy user="pulse">  
-  <allow send_destination="org.bluez"/>  
- </policy>  
- 
-</busconfig> 
+ <busconfig>
+  <policy user="pulse">  
+   <allow send_destination="org.bluez"/>  
+  </policy>  
+ </busconfig> 
 </code></pre>
 
  - /etc/pulse/system.pa
