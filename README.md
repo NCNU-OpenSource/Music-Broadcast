@@ -66,7 +66,7 @@ pair 00:00:00:00:00:00
 trust 00:00:00:00:00:00  
 connect 00:00:00:00:00:00
 </code></pre>
- - 設定藍芽參數
+ - 設定pulseaudio
  <pre><code>
  usermod -aG pulse-access,audio root
  usermod -aG pulse-access,audio pi
