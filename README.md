@@ -15,10 +15,12 @@ bluetooth and discord Music bot
 
 ## 播放藍芽音樂
 ###套件下載
-<pre><code>sudo apt-get update -y</code></pre>
-<pre><code>sudo apt-get upgrade -y</code></pre>
-<pre><code>sudo apt-get install bluetooth</code></pre>
-<pre><code>sudo apt-get install --no-install-recommends pulseaudio pulseaudio-module-bluetooth</code></pre>
+<pre><code>
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install bluetooth
+sudo apt-get install --no-install-recommends pulseaudio pulseaudio-module-bluetooth
+</code></pre>
 ###環境設定
  - /etc/systemd/system/pulseaudio.service
 <pre><code>
