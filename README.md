@@ -20,14 +20,26 @@ bluetooth and discord Music bot
 <pre><code>sudo apt-get install bluetooth</code></pre>
 <pre><code>sudo apt-get install --no-install-recommends pulseaudio pulseaudio-module-bluetooth</code></pre>
 ###環境設定
- - create /etc/systemd/system/pulseaudio.service
+ - /etc/systemd/system/pulseaudio.service
 <pre><code>
+內容:
 [Unit]  
 Description=Pulse Audio  
   
 [Service]  
 Type=simple  
 ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disable-shm
+</code></pre>
+<pre><code>systemctl daemon-reload</code></pre>
+ - /etc/dbus-1/system.d/pulseaudio-bluetooth.conf
+ <pre><code>
+內容:
+<busconfig>
+  
+ <policy user="pulse">  
+  <allow send_destination="org.bluez"/>  
+ </policy>  
+</busconfig> 
 </code></pre>
 
 
