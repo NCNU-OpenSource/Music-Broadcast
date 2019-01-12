@@ -56,6 +56,7 @@ load-module module-bluetooth-discover
 </code></pre>
 - 設定藍芽
 <pre><code>
+bluetoothctl
 agent on  
 default-agent  
 scan on  
@@ -63,6 +64,14 @@ pair 00:00:00:00:00:00
 trust 00:00:00:00:00:00  
 connect 00:00:00:00:00:00
 </code></pre>
+ - 設定藍芽參數
+ <pre><code>
+ usermod -aG pulse-access,audio root
+ usermod -aG pulse-access,audio pi
+ pactl set-card-profile 1 a2dp
+ </code></pre>
+ - 撥放
+ <pre><code>aplay 檔案名稱.WAV</code></pre>
 ## Discord Music Bot
 ### 事前準備
 - [建立 Bot 帳號](https://discordapp.com/developers/applications/)
