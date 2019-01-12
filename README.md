@@ -30,9 +30,10 @@ Description=Pulse Audio
 Type=simple  
 ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disable-shm
 </code></pre>
+ - 執行指令
 <pre><code>systemctl daemon-reload</code></pre>
  - /etc/dbus-1/system.d/pulseaudio-bluetooth.conf
- <pre><code>
+<pre><code>
 內容:
 <busconfig>
   
@@ -40,6 +41,18 @@ ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disable-shm
   <allow send_destination="org.bluez"/>  
  </policy>  
 </busconfig> 
+</code></pre>
+ - /etc/pulse/system.pa
+ <pre><code>
+ 添加到檔案最後:
+ ### Automatically load driver modules for Bluetooth hardware  
+.ifexists module-bluetooth-policy.so  
+load-module module-bluetooth-policy  
+.endif  
+ 
+.ifexists module-bluetooth-discover.so  
+load-module module-bluetooth-discover  
+.endif 
 </code></pre>
 
 
