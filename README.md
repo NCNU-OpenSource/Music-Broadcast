@@ -54,8 +54,15 @@ load-module module-bluetooth-policy
 load-module module-bluetooth-discover  
 .endif 
 </code></pre>
-
-
+- 設定藍芽
+<pre><code>
+agent on  
+default-agent  
+scan on  
+pair 00:00:00:00:00:00
+trust 00:00:00:00:00:00  
+connect 00:00:00:00:00:00
+</code></pre>
 ## Discord Music Bot
 ### 事前準備
 - [建立 Bot 帳號](https://discordapp.com/developers/applications/)
