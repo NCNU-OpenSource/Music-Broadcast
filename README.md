@@ -23,7 +23,7 @@ sudo apt-get install --no-install-recommends pulseaudio pulseaudio-module-blueto
 </code></pre>
 ### 環境設定
  - /etc/systemd/system/pulseaudio.service
-<pre><code>
+```
 內容:
 [Unit]  
 Description=Pulse Audio  
@@ -31,24 +31,24 @@ Description=Pulse Audio
 [Service]  
 Type=simple  
 ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disable-shm
-</code></pre>
- - 執行指令
-<pre><code>systemctl daemon-reload</code></pre>
- - /etc/dbus-1/system.d/pulseaudio-bluetooth.conf
-<pre><code>
+```
+- 執行指令
+```
+systemctl daemon-reload
+```
+- /etc/dbus-1/system.d/pulseaudio-bluetooth.conf
+```
 內容:
 <busconfig>
 <policy user="pulse">  
 <allow send_destination="org.bluez"/>  
 </policy>  
 </busconfig> 
-</code></pre>
-
-
- - /etc/pulse/system.pa
- <pre><code>
- 添加到檔案最後:
- ### Automatically load driver modules for Bluetooth hardware  
+```
+- /etc/pulse/system.pa
+```
+添加到檔案最後:
+### Automatically load driver modules for Bluetooth hardware  
 .ifexists module-bluetooth-policy.so  
 load-module module-bluetooth-policy  
 .endif  
@@ -56,9 +56,9 @@ load-module module-bluetooth-policy
 .ifexists module-bluetooth-discover.so  
 load-module module-bluetooth-discover  
 .endif 
-</code></pre>
+```
 - 設定藍芽
-<pre><code>
+```
 bluetoothctl
 agent on  
 default-agent  
@@ -66,15 +66,17 @@ scan on
 pair 00:00:00:00:00:00
 trust 00:00:00:00:00:00  
 connect 00:00:00:00:00:00
-</code></pre>
- - 設定pulseaudio
- <pre><code>
- usermod -aG pulse-access,audio root
- usermod -aG pulse-access,audio pi
- pactl set-card-profile 1 a2dp
- </code></pre>
- - 撥放
- <pre><code>aplay 檔案名稱.WAV</code></pre>
+```
+- 設定pulseaudio
+```
+usermod -aG pulse-access,audio root
+usermod -aG pulse-access,audio pi
+pactl set-card-profile 1 a2dp
+```
+- 撥放
+```
+aplay 檔案名稱.WAV
+```
 ## Discord Music Bot
 ### 事前準備
 - [建立 Bot 帳號](https://discordapp.com/developers/applications/)
