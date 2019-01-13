@@ -18,6 +18,10 @@ bluetooth and discord Music bot
 ```
 python3.5 -m pip install -U pafy click youtube-dl
 ```
+- Optional
+```
+python3.5 -m pip install -U python-vlc
+```
 ### 程式執行
 ```
 import yt_helper
@@ -25,6 +29,7 @@ import yt_helper
 url = "<as you wish>"
 yt_helper.ytdler(url)
 ```
+
 ## 播放藍芽音樂
 ### 套件下載
 ```
