@@ -35,6 +35,14 @@ ExecStart=/usr/bin/pulseaudio --system --disallow-exit --disable-shm
  - 執行指令
 <pre><code>systemctl daemon-reload</code></pre>
  - /etc/dbus-1/system.d/pulseaudio-bluetooth.conf
+<pre><code>
+內容:
+<busconfig>
+<policy user="pulse">  
+<allow send_destination="org.bluez"/>  
+</policy>  
+</busconfig> 
+</code></pre>
 
 
  - /etc/pulse/system.pa
