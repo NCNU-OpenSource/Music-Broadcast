@@ -4,7 +4,7 @@ import vlc
 def player_build(url):
     # url = "https://www.youtube.com/watch?v=wXxre8J0GcA"
     video = pafy.new(url)
-    best = video.getbest()
+    best = video.getbestaudio()
     playurl = best.url
 
     Instance = vlc.Instance()
